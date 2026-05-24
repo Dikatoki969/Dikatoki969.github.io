@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andi | Personal Blog</title>
+  <meta name="description" content="Personal portfolio website with Neo Brutalism design">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="foto (2).png">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loading">
+    <div class="loader"></div>
+    <p class="loading-text">Loading...</p>
+  </div>
+
+  <!-- Floating Navbar -->
+  <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀️</button>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-content fade-up">
+      <img src="download.png" alt="Profile Picture" class="profile-pic">
+      <h1>Ahmad Andhika</h1>
+      <div class="typing-container">
+        <span id="typingText"></span>
+      </div>
+      <p class="hero-tagline">Bersama Kita Ngoding Menggunakan AI</p>
+      <div class="social-buttons">
+        <a href="https://instagram.com/ahmadandhika1205" target="_blank" class="brutal-btn primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Instagram
+        </a>
+        <a href="https://tiktok.com/@dikatokiuzumaki" target="_blank" class="brutal-btn secondary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+          TikTok
+        </a>
+        <a href="https://wa.me/6285708112935" target="_blank" class="brutal-btn green">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://github.com/dikatoki969" target="_blank" class="brutal-btn yellow">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+      <div class="brutal-card about-card fade-up">
+        <h3>Hallo Semuanya!</h3>
+        <p>
+        Perkenalkan, <span style="font-weight: bold;">Saya Andhika</span>. Saya adalah seorang pelajar yang sedang belajar dan mengembangkan skill di bidang web development, automation, dan teknologi AI. Saya senang membuat website dan mencoba berbagai project digital untuk menambah pengalaman.
+        </p>
+      </div>
+      <div class="stats-grid fade-up">
+        <div class="brutal-card stat-card">
+          <div class="stat-number">4+</div>
+          <div class="stat-label">Bot Projects</div>
+        </div>
+        <div class="brutal-card stat-card" style="background: var(--primary); color: white;">
+          <div class="stat-number" style="color: white;">2+</div>
+          <div class="stat-label">Web interfaces</div>
+        </div>
+        <div class="brutal-card stat-card" style="background: var(--accent-blue); color: white;">
+          <div class="stat-number" style="color: white;">6+</div>
+          <div class="stat-label">Simple Features</div>
+        </div>
+        <div class="brutal-card stat-card" style="background: var(--accent-yellow);">
+          <div class="stat-number">1+</div>
+          <div class="stat-label">Years of Learning Tech</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-grid">
+      <div class="brutal-card skill-card fade-up">
+        <div class="skill-header">
+          <div class="skill-icon" style="background: #f97316;">
+            <img src="api.png" alt="" class="skill-icon">
+          </div>
+          <span class="skill-name">API Integration</span>
+        </div>       
+        <div class="skill-bar">
+          <div class="skill-progress" data-width="40%" style="background: #a855f7; width: 0;"></div>
+        </div>
+      </div>
+            <div class="brutal-card skill-card fade-up">
+        <div class="skill-header">
+          <div class="skill-icon" style="background: #16f96d;">
+            <img src="ai.png" alt="" class="skill-icon">
+          </div>
+          <span class="skill-name">AI Automation</span>
+        </div>       
+        <div class="skill-bar">
+          <div class="skill-progress" data-width="60%" style="background: #f7b655; width: 0;"></div>
+        </div>
+      </div>
+            <div class="brutal-card skill-card fade-up">
+        <div class="skill-header">
+          <div class="skill-icon" style="background: #f91616;">
+            <img src="soft.jpg" alt="" class="skill-icon">
+          </div>
+          <span class="skill-name">Software Installation</span>
+        </div>       
+        <div class="skill-bar">
+          <div class="skill-progress" data-width="80%" style="background: #f755b4; width: 0;"></div>
+        </div>
+      </div>
+            <div class="brutal-card skill-card fade-up">
+        <div class="skill-header">
+          <div class="skill-icon" style="background: #4016f9;">
+            <img src="db.png" alt="" class="skill-icon">
+          </div>
+          <span class="skill-name">Database Management</span>
+        </div>       
+        <div class="skill-bar">
+          <div class="skill-progress" data-width="19%" style="background: #a855f7; width: 0;"></div>
+        </div>
+      </div>
+            <div class="brutal-card skill-card fade-up">
+        <div class="skill-header">
+          <div class="skill-icon" style="background: #16def9;">
+            <img src="fn.png" alt="" class="skill-icon">
+          </div>
+          <span class="skill-name">Frontend Development</span>
+        </div>       
+        <div class="skill-bar">
+          <div class="skill-progress" data-width="35%" style="background: #f7b155; width: 0;"></div>
+        </div>
+      </div>
+       <div class="brutal-card skill-card fade-up">
+        <div class="skill-header">
+          <div class="skill-icon" style="background: #000000;">
+            <img src="mnt.png" alt="" class="skill-icon">
+          </div>
+          <span class="skill-name">Website Maintenance</span>
+        </div>       
+        <div class="skill-bar">
+          <div class="skill-progress" data-width="30%" style="background: #f755b9; width: 0;"></div>
+        </div>
+      </div>
+       <div class="brutal-card skill-card fade-up">
+        <div class="skill-header">
+          <div class="skill-icon" style="background: #ffffff;">
+            <img src="trb.png" alt="" class="skill-icon">
+          </div>
+          <span class="skill-name">PC Troubleshooting</span>
+        </div>       
+        <div class="skill-bar">
+          <div class="skill-progress" data-width="56%" style="background: #b655f7; width: 0;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects-grid">
+      <div class="brutal-card project-card fade-up">
+        <img src="images.jpg" alt="Project 1" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">Minecraft Server</h3>
+          <p class="project-desc">Server Minecraft dengan berbagai mod dan plugin keren.</p>
+          <div class="project-tags">
+            <span class="tag">Minecraft</span>
+            <span class="tag">Java</span>
+            <span class="tag">Bedrock</span>
+          </div>
+          <a href="https://host.novacloud.my.id" class="brutal-btn primary" style="width: 100%;">View Project</a>
+        </div>
+      </div>
+      <div class="brutal-card project-card fade-up">
+        <img src="web.png" alt="Project 2" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">Personal Blog Website</h3>
+          <p class="project-desc">Personal We dengan desain Neo Brutalism yang unik.</p>
+          <div class="project-tags">
+            <span class="tag">VanillaCSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">This Page</span>
+          </div>
+          <a href="#" class="brutal-btn secondary" style="width: 100%;">View Project</a>
+        </div>
+      </div>
+      <div class="brutal-card project-card fade-up">
+        <img src="eas.png" alt="Project 3" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">EasySetup Server</h3>
+          <p class="project-desc">Tools untuk memudahkan setup server linux.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Java</span>
+            <span class="tag">Bash</span>
+          </div>
+          <a href="https://github.com/Dikatoki969/EASETUP-TOOLS" class="brutal-btn yellow" style="width: 100%;">View Project</a>
+        </div>              
+      </div>
+      <div class="brutal-card project-card fade-up">
+        <img src="botwa.jpg" alt="Project 1" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">Bot whatsapp X Telegram</h3>
+          <p class="project-desc">Bot untuk menghubungkan WhatsApp dan Telegram. Yang Saling terhubung Antara 2 Aplikasi</p>
+          <div class="project-tags">
+            <span class="tag">Javascript</span>
+            <span class="tag">WhatsApp</span>
+            <span class="tag">Telegram</span>
+          </div>
+          <a href="https://github.com/Dikatoki969/Gamma-bot" class="brutal-btn primary" style="width: 100%;">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Links Section -->
+  <section id="social">
+    <h2 class="section-title">Connect With Me</h2>
+    <div class="social-grid">
+      <a href="https://tiktok.com/@dikatokiuzumaki" target="_blank" class="brutal-card social-card fade-up">
+        <div class="social-icon" style="background: #000;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+        </div>
+        <div class="social-info">
+          <h4>TikTok</h4>
+          <span>@dikatokiuzumaki</span>
+        </div>
+      </a>
+      <a href="https://github.com/dikatoki969" target="_blank" class="brutal-card social-card fade-up">
+        <div class="social-icon" style="background: #333;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </div>
+        <div class="social-info">
+          <h4>GitHub</h4>
+          <span>@Dikatoki969</span>
+        </div>
+      </a>
+      <a href="https://wa.me/6285708112935" target="_blank" class="brutal-card social-card fade-up">
+        <div class="social-icon" style="background: #25D366;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </div>
+        <div class="social-info">
+          <h4>WhatsApp</h4>
+          <span>Chat Me</span>
+        </div>
+      </a>
+      <a href="mailto:ahmadandhika969@email.com" class="brutal-card social-card fade-up">
+        <div class="social-icon" style="background: #EA4335;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+        </div>
+        <div class="social-info">
+          <h4>Email</h4>
+          <span>ahmadandhika969@email.com</span>
+        </div>
+      </a>
+      <a href="https://instagram.com/ahmadandhika1205" target="_blank" class="brutal-card social-card fade-up">
+        <div class="social-icon" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </div>
+        <div class="social-info">
+          <h4>Instagram</h4>
+          <span>@ahmadandhika1205</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="section-title">Kirim Pesan Cepat</h2>
+    <div class="contact-container">
+      <form class="brutal-card contact-form fade-up" id="contactForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+        </div>
+        <button type="submit" class="brutal-btn primary submit-btn">
+          Send Message
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2019 Ahmad Andhika. A.</p>
+    <p class="quote">"Ayo Mancing"</p>
+  </footer>
+
+  <script>
+    // Loading Screen
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('loading').classList.add('hidden');
+      }, 3000);
+    });
+
+    // Theme Toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    
+    // Check saved theme
+    if (localStorage.getItem('theme') === 'dark') {
+      html.classList.add('dark');
+      themeToggle.textContent = '🌙';
+    }
+
+    themeToggle.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      const isDark = html.classList.contains('dark');
+      themeToggle.textContent = isDark ? '🌙' : '☀️';
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+
+    // Mobile Menu
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
+
+    // Close mobile menu on link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+      });
+    });
+
+    // Typing Animation
+    const typingTexts = ['Beginner Developer', 'AI User', 'Vibe Coder', 'Tech Explorer', 'Have Ram DDR$4 8GB'];
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typingElement = document.getElementById('typingText');
+
+    function type() {
+      const currentText = typingTexts[textIndex];
+      
+      if (isDeleting) {
+        typingElement.textContent = currentText.substring(0, charIndex - 1);
+        charIndex--;
+      } else {
+        typingElement.textContent = currentText.substring(0, charIndex + 1);
+        charIndex++;
+      }
+
+      let typeSpeed = isDeleting ? 50 : 100;
+
+      if (!isDeleting && charIndex === currentText.length) {
+        typeSpeed = 2000;
+        isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % typingTexts.length;
+        typeSpeed = 500;
+      }
+
+      setTimeout(type, typeSpeed);
+    }
+
+    type();
+
+    // Scroll Animation
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          
+          // Animate skill bars
+          const skillProgress = entry.target.querySelector('.skill-progress');
+          if (skillProgress) {
+            const width = skillProgress.dataset.width;
+            setTimeout(() => {
+              skillProgress.style.width = width;
+            }, 200);
+          }
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Contact Form
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+   e.preventDefault();
+  const name = document.getElementById('name').value;
+  const message = document.getElementById('message').value;
+  const email = document.getElementById('email').value;
+
+  // nomor WA tujuan (pakai kode negara, tanpa +)
+  const phone = '6285708112935';
+
+  // format pesan
+  const text = `Halo, saya ${name}\nemail: ${email}\n\n\nPesan: ${message}`;
+
+  // buka WhatsApp
+  const waUrl =
+      "https://api.whatsapp.com/send?phone=" +
+      phone +
+      "&text=" +
+      encodeURIComponent(text);
+
+  window.open(waUrl, "_blank");
+ this.reset();
+  });
+
+    // Navbar scroll effect
+    let lastScroll = 0;
+    const navbar = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      
+      if (currentScroll > lastScroll && currentScroll > 100) {
+        navbar.style.transform = 'translateX(-50%) translateY(-100%)';
+      } else {
+        navbar.style.transform = 'translateX(-50%) translateY(0)';
+      }
+      
+      lastScroll = currentScroll;
+    });
+document.addEventListener("mousemove", (e) => {
+  document.body.style.setProperty("--x", `${e.clientX}px`);
+  document.body.style.setProperty("--y", `${e.clientY}px`);
+});
+  </script>
+</body>
+</html>
